@@ -1,7 +1,10 @@
 @import "normalize.styl"
+@import "fonts.styl"
 
 gris-oscuro = #333333
 gris-claro = #818181
+rojo = #BD255B
+
 body
 	font-size 16px
 	font-family 'Varela Round', sans-serif
@@ -9,15 +12,18 @@ figure
 	margin 0
 a 
 	text-decoration none
+img 
+	vertical-align top
 .header
 	height 3.5em
 	.menu
 		display none
+		back-ground red
 	.title
 		font-size 1.1em
 		text-align center
 		margin 0
-		line-height 3.5em
+		line-height 3.5rem
 .border-bottom
 	border-bottom 1px solid gris-claro
 .container
@@ -25,10 +31,12 @@ a
 	font-size 0
 	text-align center
 .button-menu
+	color gris-oscuro
+	left 1em
+	margin-top -8px
 	position absolute
 	top 50%
-	left .5em
-	margin-top -10px
+	
 //OOCSS Clases
 .relative
 	position relative
@@ -36,11 +44,74 @@ a
 	color gris-oscuro
 .autor
 	color gris-claro
+.actions
+	position absolute
+	bottom 0
+	right 0
+	left 0
+	font-size 1.2em
+	background-color rgba(black,.3)
+.right-text
+	text-align right
+.action
+	color white
+	margin-right .5em
+	&:last-child
+		margin-right 0
+	&.gray
+		color rojo
+.relative
+	position relative
+.padding
+	padding 1em
+.padding-tb
+	padding 1em
+.center-block
+	margin 0 auto
+.center-text
+	text-align center
 .song
-	width 8rem
 	display inline-block
 	font-size 1rem
-	margin 0 .5em 1em .5em
+	margin-right 1em
+	margin-bottom 1em
 	text-align left
+	width 8rem
+	&:nth-child(even)
+		margin-right 0
 	p
 		margin .5em 0
+.playing
+	&.small
+		width 20em
+.progress
+	margin 1em 0
+	.min 
+	.max 
+		font-size .8em
+		top -5px
+		position absolute
+	.min 
+		
+		left 0
+	.max
+		right 0
+	.total
+		background-color gris-claro
+		border-radius 5px
+		height 5px
+		margin 0 auto
+		width 75%
+	.state
+		background-color rojo
+		border-radius 5px
+		height 5px
+		width 30%
+	.circulo
+		background-color gris-oscuro	
+		border-radius 50%
+		height 10px
+		position absolute
+		right 0
+		top -2px
+		width 10px
