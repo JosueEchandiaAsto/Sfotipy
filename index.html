@@ -2,22 +2,47 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 	<title>Spotify</title>
 	<link rel="stylesheet" href="css/estilo.css">
 	<link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
 </head>
 <body>
 	<header class="header relative border-bottom">
-		<a href="" class="button-menu ">*</a>
+		<div class="logo">
+			<div class="wrap center-block">
+				<figure class="image isotipo float-left">
+					<img src="img/logo.png" alt="">
+				</figure>
+				<div class="user float-right">
+					<figure class="avatar round float-left">
+						<img src="img/avatares/josue.jpg" 
+						width="38px" height="38px"
+						alt="@Josueechandiaasto">
+					</figure>
+					<span class="float-left user-name">
+						@Josueechandiaasto
+					</span>
+				</div>
+				<div class="search float-right">
+					<form action="" class="relative">
+						<span class="icon-search form-icon left"></span>
+						<input type="text" placeholder="@Josueechandiaasto" class="input">
+						<span class="form-icon close-icon right">x</span>
+					</form>
+				</div>
+			</div>
+		</div>
+		<a href="" class="button-menu icon-menu"></a>
 		<nav class="menu">
-			<ul class="list">
-				<li class="item"><a href="">Top Hits</a></li>
-				<li class="item"><a href="">Top Hits</a></li>
-				<li class="item"><a href="">Top Hits</a></li>
-				<li class="item"><a href="">Top Hits</a></li>
-				<li class="item"><a href="">Top Hits</a></li>
-				<li class="item"><a href="">Top Hits</a></li>
+			<ul class="list wrap center-block">
+				<li class="item"><a href="">
+				Top Hits</a></li>
+				<li class="item"><a href="">
+				Profile</a></li>
+				<li class="item"><a href="">
+				Settings</a></li>
+				<li class="item"><a href="">Playlits</a></li>
 			</ul>
 		</nav>
 		<div class="title">
@@ -26,6 +51,116 @@
 			</span>
 		</div>
 	</header>
+	<section class="playing small medium large">
+		<div class="music">
+			<figure class="image relative">
+				<img src="img/songs/tst-playing.jpg" width="320px" height="320px"alt="Creere Tercer Cielo">
+				<div class="actions padding right-text">
+					<a href="" class="action icon-add"></a>
+					<a href="" class="action icon-love"></a>
+					<a href="" class="action icon-share"></a>
+				</div>
+			</figure>
+			<div class="padding">
+				<div class="progress relative">
+					<span class="min">0:45</span>
+					<div class="total">
+						<div class="state relative">
+							<div class="circulo">
+								
+							</div>
+						</div>
+					</div>
+					<span class="max">4:05</span>
+				</div>
+				<div class="description center-text border-bottom">
+					<p class="name">
+						Creere
+					</p>
+					<p class="autor">
+						Tercer Cielo
+					</p>
+				</div>
+				<div class="play center-text padding-tb">
+					<a href="" class="action gray icon-prev"></a>
+					<a href="" class="action gray icon-play"></a>
+					<a href="" class="action gray icon-next"></a>
+					<a href="" class="action gray icon-random"></a>
+					<a href="" class="action gray icon-vol"></a>
+				</div>
+			</div>
+		</div>
+		<div class="playlist float-right">
+			<p class="name">
+				Esperare
+			</p>
+			<p class="autor">
+				Jesus Adrian Romero
+			</p>
+			<ul class="list">
+				<li class="item border-bottom">
+					<span>
+						Josue Manuel Echandia Asto
+					</span>
+					<span class="float-right">
+						<a href="" class="action icon-add gray"></a>
+						<a href="" class="action icon-love gray"></a>
+						<a href="" class="action icon-share gray"></a>
+					</span>
+				</li>
+				<li class="item border-bottom">
+					<span>
+						Josue Manuel Echandia Asto
+					</span>
+					<span class="float-right">
+						<a href="" class="action icon-add gray"></a>
+						<a href="" class="action icon-love gray"></a>
+						<a href="" class="action icon-share gray"></a>
+					</span>
+				</li>
+				<li class="item border-bottom">
+					<span>
+						Josue Manuel Echandia Asto
+					</span>
+					<span class="float-right">
+						<a href="" class="action icon-add gray"></a>
+						<a href="" class="action icon-love gray"></a>
+						<a href="" class="action icon-share gray"></a>
+					</span>
+				</li>
+				<li class="item border-bottom">
+					<span>
+						Josue Manuel Echandia Asto
+					</span>
+					<span class="float-right">
+						<a href="" class="action icon-add gray"></a>
+						<a href="" class="action icon-love gray"></a>
+						<a href="" class="action icon-share gray"></a>
+					</span>
+				</li>
+				<li class="item border-bottom">
+					<span>
+						Josue Manuel Echandia Asto
+					</span>
+					<span class="float-right">
+						<a href="" class="action icon-add gray"></a>
+						<a href="" class="action icon-love gray"></a>
+						<a href="" class="action icon-share gray"></a>
+					</span>
+				</li>
+				<li class="item border-bottom">
+					<span>
+						Josue Manuel Echandia Asto
+					</span>
+					<span class="float-right">
+						<a href="" class="action icon-add gray"></a>
+						<a href="" class="action icon-love gray"></a>
+						<a href="" class="action icon-share gray"></a>
+					</span>
+				</li>
+			</ul>
+		</div>
+	</section>
 	<section class="container">
 		<article class="song">
 			<figure class="image">
@@ -93,7 +228,72 @@
 				Jesus Adrian Romero
 			</p>
 		</article>
+		<article class="song">
+			<figure class="image">
+				<img src="img/songs/tst.jpg" alt="Esperare Jesus Adrian Romero" width="128px" heigth="128px">
+			</figure>
+			<p class="name">
+				Esperare
+			</p>
+			<p class="autor">
+				Jesus Adrian Romero
+			</p>
+		</article>
+		<article class="song">
+			<figure class="image">
+				<img src="img/songs/tst.jpg" alt="Esperare Jesus Adrian Romero" width="128px" heigth="128px">
+			</figure>
+			<p class="name">
+				Esperare
+			</p>
+			<p class="autor">
+				Jesus Adrian Romero
+			</p>
+		</article>
+		<article class="song">
+			<figure class="image">
+				<img src="img/songs/tst.jpg" alt="Esperare Jesus Adrian Romero" width="128px" heigth="128px">
+			</figure>
+			<p class="name">
+				Esperare
+			</p>
+			<p class="autor">
+				Jesus Adrian Romero
+			</p>
+		</article>
+		<article class="song">
+			<figure class="image">
+				<img src="img/songs/tst.jpg" alt="Esperare Jesus Adrian Romero" width="128px" heigth="128px">
+			</figure>
+			<p class="name">
+				Esperare
+			</p>
+			<p class="autor">
+				Jesus Adrian Romero
+			</p>
+		</article>
+		<article class="song">
+			<figure class="image">
+				<img src="img/songs/tst.jpg" alt="Esperare Jesus Adrian Romero" width="128px" heigth="128px">
+			</figure>
+			<p class="name">
+				Esperare
+			</p>
+			<p class="autor">
+				Jesus Adrian Romero
+			</p>
+		</article>
+		<article class="song">
+			<figure class="image">
+				<img src="img/songs/tst.jpg" alt="Esperare Jesus Adrian Romero" width="128px" heigth="128px">
+			</figure>
+			<p class="name">
+				Esperare
+			</p>
+			<p class="autor">
+				Jesus Adrian Romero
+			</p>
+		</article>
 	</section>
-
 </body>
 </html>
